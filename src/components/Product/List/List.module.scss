@@ -1,0 +1,47 @@
+.listContainer {
+    padding: 36px 10%;
+
+    h1 {
+        text-align: center;
+        color: var(--primaryColor);
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+    }
+    .list {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 24px;
+        cursor: grab;
+
+        .listCard {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            left: -25px;
+            svg {
+                font-size: 30px;
+                color: rgb(140, 140, 140);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+
+        .next {
+            right: -25px;
+            left: unset;
+            position: absolute;
+        }
+    }
+}

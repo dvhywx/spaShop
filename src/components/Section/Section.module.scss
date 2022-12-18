@@ -1,0 +1,38 @@
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 9%;
+    height: 200px;
+    background-color: #65ba2c;
+
+    .sectionBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        svg {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+        span {
+            margin-bottom: 4px;
+        }
+    }
+    button {
+        padding: 10px 40px;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        font-size: 24px;
+        color: #fff;
+        background-color: #65ba2c;
+        transition: 0.8s;
+        cursor: pointer;
+        &:hover {
+            color: rgba(61, 56, 56, 0.884);
+            background-color: #fff;
+        }
+    }
+}

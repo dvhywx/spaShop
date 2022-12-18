@@ -1,0 +1,43 @@
+.product {
+    padding: 28px 10%;
+
+    h1 {
+        text-align: center;
+        color: var(--primaryColor);
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .productList {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .productCard {
+            display: flex;
+            flex-direction: column;
+            padding: 0 16px;
+            border: 1px solid #ccc;
+            flex-basis: 33%;
+            margin: 28px 4px;
+            img {
+                height: 250px;
+                border: 1px solid #ccc;
+                width: 100%;
+                cursor: pointer;
+            }
+
+            h3 {
+                text-align: center;
+                margin-bottom: 10px;
+                margin-top: 20px;
+                font-size: 16px;
+            }
+            p {
+                text-align: justify;
+                padding-bottom: 28px;
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: grab;
+    height: 516px;
+    font-family: serif;
+
+    .bannerArrow {
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        opacity: 0.6;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .bannerImage {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 538px;
+        padding-right: 100%;
+        background-image: url("~/src/assets/images/banner1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .textBanner {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        h3 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 64px;
+            text-shadow: 2px 2px 4px #b8b8b8;
+        }
+
+        span {
+            color: #fff;
+            text-shadow: 2px 2px 4px #b8b8b8;
+            font-size: 56px;
+            font-weight: 900;
+            margin: 10px 0;
+            text-transform: uppercase;
+
+            &:last-child {
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        button {
+            margin-top: 20px;
+            cursor: pointer;
+            border: 0px;
+            border-radius: 25px;
+            padding: 10px 20px;
+            background-color: var(--primaryColor);
+            transition: 1s ease-in-out;
+
+            span {
+                color: #fff;
+            }
+
+            &:hover {
+                background-color: #43a701;
+            }
+        }
+    }
+}

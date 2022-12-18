@@ -1,0 +1,204 @@
+.banner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 36px;
+    margin-bottom: 50px;
+
+    div {
+        flex-basis: 30%;
+        h2 {
+            margin-right: 30px;
+            font-weight: normal;
+
+            a {
+                color: rgb(179, 179, 179);
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+
+            span {
+                color: rgb(179, 179, 179);
+            }
+        }
+    }
+
+    .filter {
+        display: flex;
+        line-height: 20px;
+        align-items: center;
+        flex-basis: 70%;
+        margin-left: 50px;
+
+        p {
+            font-size: 20px;
+        }
+
+        select {
+            padding: 4px 10px;
+            margin: 0 20px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 4px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            svg {
+                font-size: 28px;
+                text-align: center;
+                cursor: pointer;
+                color: rgb(179, 179, 179);
+
+                &:hover {
+                    color: var(--primaryColor);
+                }
+
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.wapper {
+    display: flex;
+
+    .layout {
+        flex-basis: 30%;
+
+        h2 {
+            font-weight: 400;
+        }
+
+        ul {
+            width: 220px;
+            margin: 20px 0px;
+            padding: 10px 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            li {
+                padding: 8px 0;
+                border-bottom: 1px dashed #ccc;
+                cursor: pointer;
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+
+        .sliderRange {
+            margin: 20px 0;
+            height: 4px;
+            background-color: rgba(122, 122, 122, 0.5);
+            position: relative;
+            width: 220px;
+            cursor: pointer;
+            span {
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translate(0, -40%);
+                padding: 8px;
+                border-radius: 50px;
+                background-color: rgb(90, 90, 90);
+
+                &:nth-child(2) {
+                    left: unset;
+                    right: 0;
+                }
+            }
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            width: 220px;
+
+            button {
+                padding: 6px 12px;
+                border-radius: 25px;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                background-color: rgb(90, 90, 90);
+                margin-right: 10px;
+                &:hover {
+                    background-color: var(--primaryColor);
+                }
+            }
+
+            div {
+                width: 120px;
+                font-size: 14px;
+                p {
+                    margin-left: 25px;
+                    color: rgb(95, 95, 95);
+
+                    span {
+                        margin-left: 8px;
+                        display: inline-block;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+
+        .listSide {
+            h3 {
+                font-weight: 400;
+            }
+
+            ul {
+                li {
+                    display: flex;
+
+                    &:first-child {
+                        padding-top: 4px;
+                    }
+
+                    img {
+                        flex-basis: 33%;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        flex-basis: 66%;
+                        margin-left: 8px;
+                        p {
+                            font-size: 14px;
+                            color: rgb(90, 90, 90);
+                            margin-bottom: 4px;
+                        }
+
+                        span {
+                            color: rgb(90, 90, 90);
+                            text-decoration: line-through;
+                            font-size: 14px;
+                            &:last-child {
+                                color: #000;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        flex-basis: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100px;
+    padding: 0 9%;
+    background-color: #fff;
+
+    .logo {
+        width: 200px;
+        height: 96px;
+        background-image: url("~/src/assets/images/logoSpa.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .navlist {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+
+        li {
+            display: block;
+            margin: 0 12px;
+            height: 36px;
+
+            .active {
+                color: var(--primaryColor);
+            }
+            .cart {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-right: 4px;
+                }
+            }
+
+            a {
+                padding: 10px 0;
+                text-decoration: none;
+                color: rgba(102, 102, 102, 0.85);
+                transition: all 0.2s;
+                display: block;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+    }
+}
