@@ -64,6 +64,7 @@
     .details {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 60px;
         .detailBox {
             display: flex;
             flex-direction: column;
@@ -91,7 +92,7 @@
         }
 
         .detailImg {
-            // background-image: url("~/src/assets/images/");
+            background-image: url("~/src/assets/images/spa1.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;

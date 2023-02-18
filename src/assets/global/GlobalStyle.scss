@@ -25,5 +25,13 @@ a {
 
 :root {
     --primaryColor: #65ba2c;
+    --bgFillColor: #0b0b0b;
+    --titleColor: rgb(179, 179, 179);
     font-family: Comportaa, sans-serif;
+}
+
+@media screen and (max-width: 1030px) {
+    .container {
+        padding: 20px 20px;
+    }
 }

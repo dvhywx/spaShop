@@ -40,7 +40,8 @@
                 }
             }
 
-            a {
+            a,
+            .log {
                 padding: 10px 0;
                 text-decoration: none;
                 color: rgba(102, 102, 102, 0.85);
@@ -50,7 +51,19 @@
 
                 &:hover {
                     color: var(--primaryColor);
+                    cursor: pointer;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .navbar {
+        padding: 0 12px;
+        .navlist {
+            li {
+                margin: 0 8px;
             }
         }
     }

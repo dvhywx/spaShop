@@ -1,5 +1,7 @@
 import clsx from "clsx";
 import styles from "./About.module.scss";
+import spa1 from "../../assets/images/spa1.jpg";
+import spa2 from "../../assets/images/spa2.jpg";
 
 export default function About() {
     return (
@@ -19,10 +21,10 @@ export default function About() {
             </div>
             <div className={clsx(styles.aboutBot)}>
                 <div>
-                    <img src="" alt="Ảnh" />
+                    <img src={spa1} alt="Ảnh" />
                 </div>
                 <div>
-                    <img src="" alt="Ảnh" />
+                    <img src={spa2} alt="Ảnh" />
                 </div>
             </div>
         </div>

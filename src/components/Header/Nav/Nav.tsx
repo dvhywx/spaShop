@@ -1,12 +1,24 @@
-import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import clsx from "clsx";
 import styles from "./Nav.module.scss";
+import Login from "../../../pages/login/Login";
+import Register from "../../../pages/register/Register";
 
 export default function Nav() {
+    const [isLogin, setIsLogin] = useState(false);
+    const [isRegister, setIsRegister] = useState(false);
+
+    const setupLog = {
+        setIsLogin,
+        setIsRegister,
+    };
+
     return (
         <div className={clsx(styles.navbar)}>
+            {isLogin && <Login setupLog={setupLog} />}
+            {isRegister && <Register setupLog={setupLog} />}
             <div className={clsx(styles.logo)}></div>
             <div className={clsx(styles.navlist)}>
                 <ul className={clsx(styles.navlist)}>
@@ -41,11 +53,21 @@ export default function Nav() {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Đăng Nhập</NavLink>
+                        <div
+                            className={clsx(styles.log)}
+                            onClick={() => setIsLogin(!isLogin)}
+                        >
+                            Đăng Nhập
+                        </div>
                     </li>
 
                     <li>
-                        <NavLink to="/">Đăng Kí</NavLink>
+                        <div
+                            className={clsx(styles.log)}
+                            onClick={() => setIsRegister(!isRegister)}
+                        >
+                            Đăng Kí
+                        </div>
                     </li>
                 </ul>
             </div>

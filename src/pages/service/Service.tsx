@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { Link } from "react-router-dom";
 import { BsSortDown, BsSortDownAlt } from "react-icons/bs";
 import Card from "../../components/Product/Card/Card";
+import { data1, data2, data3, data4 } from "../../components/Product/List/List";
 
 export default function Service() {
     return (
@@ -67,38 +68,39 @@ export default function Service() {
                             <h3>Sản Phẩm</h3>
                             <ul>
                                 <li>
-                                    <img src="" alt="" />
+                                    <img src={data1.img} alt="" />
                                     <div>
                                         <p>Bấm huyệt đạo thư giãn</p>
-                                        <span>150,000 đ</span>
                                         <span>750,000 đ</span>
+                                        <span>150,000 đ</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="" alt="" />
+                                    <img src={data2.img} alt="" />
                                     <div>
                                         <p>Bấm huyệt đạo thư giãn</p>
-                                        <span>150,000 đ</span>
-                                        <span>750,000 đ</span>
+                                        <span>550,000 đ</span>
+                                        <span>50,000 đ</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="" alt="" />
+                                    <img src={data3.img} alt="" />
                                     <div>
                                         <p>Bấm huyệt đạo thư giãn</p>
-                                        <span>150,000 đ</span>
-                                        <span>750,000 đ</span>
+                                        <span>850,000 đ</span>
+                                        <span>200,000 đ</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className={clsx(styles.content)}>
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card data={data1} />
+                        <Card data={data2} />
+                        <Card data={data3} />
+                        <Card data={data4} />
+                        <Card data={data2} />
+                        <Card data={data4} />
                     </div>
                 </div>
             </div>
